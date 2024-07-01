@@ -1,0 +1,77 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #e8faff;
+}
+
+body {
+    --s: 10em; /* control the size */
+    --c2: #6fd4ff;
+    --c1: #38aed9;
+    --c3: #05719b;
+
+    --_g: var(--c3) 0 120deg, #0000 0;
+    background: conic-gradient(from -60deg at 50% calc(100% / 3), var(--_g)),
+        conic-gradient(from 120deg at 50% calc(200% / 3), var(--_g)),
+        conic-gradient(
+            from 60deg at calc(200% / 3),
+            var(--c3) 60deg,
+            var(--c2) 0 120deg,
+            #0000 0
+        ),
+        conic-gradient(
+            from 180deg at calc(100% / 3),
+            var(--c1) 60deg,
+            var(--_g)
+        ),
+        linear-gradient(
+            90deg,
+            var(--c1) calc(100% / 6),
+            var(--c2) 0 50%,
+            var(--c1) 0 calc(500% / 6),
+            var(--c2) 0
+        );
+    /* background-size: calc(1.732 * var(--s)) var(--s); */
+}
+.container {
+    text-align: center;
+    padding: 2em;
+    width: 80%;
+    /* backdrop-filter: blur(10px); */
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    background: url("../img/logo_simplified_countur.svg") no-repeat center
+        center;
+    background-size: contain;
+    margin: 0 auto 20px auto;
+}
+
+span {
+    color: #05719b;
+}
+
+.title {
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+.subtitle {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    font-size: 0.9em;
+}
