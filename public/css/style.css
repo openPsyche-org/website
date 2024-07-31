@@ -60,12 +60,11 @@ body {
 
 .welco,
 .open {
-    background-color: var(--c3);
-    color: transparent;
-    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.192);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
+    color: var(--c1);
+    text-shadow: -1px 1px 1px rgb(0, 0, 0),
+        1px 1px 1px rgba(255, 255, 255, 0.257),
+        /* bottom-right shadow */ 1px -1px 1px rgba(255, 255, 255, 0.171); /* top-left highlight */
+
     display: inline-block;
     /* transform: rotate3d(-32, 21, 27, 28deg) skewX(33deg) rotate(18deg); */
     /* transform: matrix(0.9, 0.56, 0, 0.96, 1, -1); */
@@ -73,7 +72,7 @@ body {
         1,
         0.6,
         0,
-        -0.0008,
+        -0.0015,
         0,
         1,
         1,
@@ -92,7 +91,7 @@ body {
 
 .me-to,
 .psyche {
-    color: #05719bc1;
+    color: var(--c3);
     text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2),
         /* bottom-right shadow */ 1px -1px 1px rgba(0, 0, 0, 1); /* top-left highlight */
 
@@ -105,7 +104,7 @@ body {
             1,
             -0.6,
             0,
-            0.0008,
+            0.0015,
             0,
             1,
             0.7,
