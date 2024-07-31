@@ -125,7 +125,7 @@ body {
 .welco {
     position: absolute;
     right: 50%;
-    top: 0;
+    top: -2%;
 }
 
 .me-to {
@@ -137,7 +137,7 @@ body {
 .open {
     position: absolute;
     right: 50%;
-    bottom: 0;
+    bottom: 5%;
 }
 
 .psyche {
