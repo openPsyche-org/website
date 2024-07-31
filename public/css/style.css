@@ -40,11 +40,117 @@ body {
         );
     /* background-size: calc(1.732 * var(--s)) var(--s); */
 }
+
 .container {
-    text-align: center;
     padding: 2em;
     width: 80%;
-    /* backdrop-filter: blur(10px); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.title {
+    font-size: 2em;
+    position: relative;
+    height: 3em; /* Add this line to give the title a fixed height */
+}
+
+.welco,
+.open {
+    background-color: var(--c3);
+    color: transparent;
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.192);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    display: inline-block;
+    /* transform: rotate3d(-32, 21, 27, 28deg) skewX(33deg) rotate(18deg); */
+    /* transform: matrix(0.9, 0.56, 0, 0.96, 1, -1); */
+    transform: matrix3d(
+        1,
+        0.6,
+        0,
+        -0.0008,
+        0,
+        1,
+        1,
+        0.001,
+        1,
+        1,
+        0.2,
+        0,
+        0,
+        1,
+        0,
+        1
+    );
+    transform-origin: 100% 50%;
+}
+
+.me-to,
+.psyche {
+    color: #05719bc1;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2),
+        /* bottom-right shadow */ 1px -1px 1px rgba(0, 0, 0, 1); /* top-left highlight */
+
+    white-space: nowrap;
+    display: inline-block;
+    /* transform: rotate3d(-17, 10, 21, -40deg) skewX(-27deg); */
+    /* transform: rotate3d(-22, 12, 21, -44deg) skewX(-28deg) rotate(-1deg); */
+    /* transform: matrix(0.8, -0.5, -0.05, 1, 1, -1); */
+    transform: matrix3d(
+            1,
+            -0.6,
+            0,
+            0.0008,
+            0,
+            1,
+            0.7,
+            0.001,
+            0,
+            0,
+            -0.2,
+            0,
+            0,
+            0,
+            1,
+            1.01
+        )
+        skewX(359deg);
+    transform-origin: 0 50%;
+}
+
+.welco {
+    position: absolute;
+    right: 50%;
+    top: 0;
+}
+
+.me-to {
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
+
+.open {
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+}
+
+.psyche {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+}
+
+.subtitle {
+    margin-top: 2em;
+    font-size: 1.2em;
+    text-shadow: 0px 0px 3px rgb(0, 0, 0);
 }
 
 .logo {
@@ -54,10 +160,6 @@ body {
         center;
     background-size: contain;
     margin: 0 auto 20px auto;
-}
-
-span {
-    color: #05719b;
 }
 
 .title {
